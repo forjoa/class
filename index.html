@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/shopping-cart.svg">
+    <title>E-commerce</title>
 </head>
+
 <body>
-    <h1>Productos</h1>
+    <header>
+        <h1 onclick="window.location.reload()">Productos</h1>
+
+        <select name="filter">
+            <option>Seleccionar categoría</option>
+            <option value="1">Electrónica</option>
+            <option value="2">Ropa</option>
+            <option value="3">Hogar</option>
+        </select>
+
+        <aside>
+            <p id="counter">0</p>
+            <img src="./assets/shopping-cart.svg" alt="Shopping Cart" onclick="openCart()"/>
+        </aside>
+    </header>
+
+    <div id="cart" style="display: none;"></div>
+
     <div id="root"></div>
-    <script src="main.js"></script> <!-- Mueve la carga del script al final del cuerpo -->
+    <script src="main.js"></script>
 </body>
+
 </html>
