@@ -134,3 +134,9 @@ option {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
+@media (max-width: 1000px) {
+    #root {
+        grid-template-columns: 1fr;
+    }
+}
